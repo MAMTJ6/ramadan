@@ -268,11 +268,11 @@ index.html?testTime=18:30                               # Today + simulated time
 - `.toc` - Table of contents
 - `.infaq-btn` - Infaq button
 
-## Ramadan 2026 Dates
+## Ramadan 2027 Dates
 
-- **Start**: 19 February 2026 (1 Ramadan 1447H)
-- **End**: 20 March 2026 (30 Ramadan 1447H)
-- **Eid**: 21 March 2026 (1 Syawal 1447H)
+- **Start**: 8 February 2027 (1 Ramadan 1448H)
+- **End**: 9 March 2027 (30 Ramadan 1448H)
+- **Eid**: 10 March 2027 (1 Syawal 1448H)
 
 ## Changelog
 

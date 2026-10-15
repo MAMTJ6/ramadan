@@ -1,12 +1,12 @@
-# Jadual Waktu Ramadan 2026
+# Jadual Waktu Ramadan 2027
 
 **Versi:** 1.5.7
 
-Aplikasi web untuk memaparkan jadual waktu Imsak, Subuh dan Berbuka sepanjang bulan Ramadan 1447H / 2026M untuk semua zon di Malaysia.
+Aplikasi web untuk memaparkan jadual waktu Imsak, Subuh dan Berbuka sepanjang bulan Ramadan 1448H / 2027M untuk semua zon di Malaysia.
 
 ## Ciri-ciri
 
-- Jadual lengkap Ramadan (19 Feb - 20 Mac 2026)
+- Jadual lengkap Ramadan (8 Feb - 9 Mac 2027)
 - Pilihan 61 zon seluruh Malaysia
 - Pemilihan zon disimpan secara automatik
 - **Pautan boleh dikongsi** - URL dikemaskini mengikut zon yang dipilih

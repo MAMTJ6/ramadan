@@ -1,39 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/_vercel/insights/script.js"></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="7772327c-749c-4b99-8cc3-cbdffc8676a6"></script>
-    <script>
-      (function() {
-        if (window.location.hostname !== 'beta.ramadan.mamtj6.com') return;
-        document.addEventListener('DOMContentLoaded', function() {
-          var b = document.createElement('div');
-          var url = 'https://ramadan.mamtj6.com' + window.location.pathname + window.location.search;
-          b.innerHTML = '⚠️ Ini adalah versi <strong>beta</strong>. Lawati <a href="' + url + '" style="color:#000;font-weight:bold;text-decoration:underline">ramadan.mamtj6.com</a> untuk versi utama.';
-          b.style.cssText = 'background:#f59e0b;color:#000;text-align:center;padding:8px 16px;font-size:13px;font-family:sans-serif;width:100%;box-sizing:border-box;';
-          document.body.insertBefore(b, document.body.firstChild);
-        });
-      })();
-    </script>
-    <title>My Simple Index Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="7772327c-749c-4b99-8cc3-cbdffc8676a6"></script>
+  <script>
+    (function() {
+      if (window.location.hostname !== 'beta.ramadan.mamtj6.com') return;
+      document.addEventListener('DOMContentLoaded', function() {
+        var b = document.createElement('div');
+        var url = 'https://ramadan.mamtj6.com' + window.location.pathname + window.location.search;
+        b.innerHTML = '⚠️ Ini adalah versi <strong>beta</strong>. Lawati <a href="' + url + '" style="color:#000;font-weight:bold;text-decoration:underline">ramadan.mamtj6.com</a> untuk versi utama.';
+        b.style.cssText = 'background:#f59e0b;color:#000;text-align:center;padding:8px 16px;font-size:13px;font-family:sans-serif;width:100%;box-sizing:border-box;';
+        document.body.insertBefore(b, document.body.firstChild);
+      });
+    })();
+  </script>
+  <title>Ramadan 2027 / 1448H — Countdown, Jadual Waktu & Waktu Solat</title>
+  <meta name="description" content="Portal Ramadan 2027 / 1448H: kiraan detik ke 1 Ramadan, jadual waktu Imsak, Subuh dan Berbuka 61 zon JAKIM, dan waktu solat harian Malaysia.">
+  <meta name="keywords" content="Ramadan 2027, 1448H, Countdown Ramadan, Jadual Waktu Berbuka, Imsak, Waktu Solat Malaysia, MAMTJ6">
+  <link rel="canonical" href="https://ramadan.mamtj6.com/">
+  <link rel="icon" type="image/svg+xml" href="https://dev.mamtj6.com/media/logo-mamtj6/SVG/mamtj6_single.svg" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="countdown/media/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="RAMADAN 2027">
+  <meta property="og:title" content="Ramadan 2027 / 1448H — MAMTJ6">
+  <meta property="og:description" content="Kiraan detik ke 1 Ramadan, jadual Imsak & Berbuka, dan waktu solat harian.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:url" content="https://ramadan.mamtj6.com/">
+  <meta property="og:image" content="https://ramadan.mamtj6.com/countdown/media/preview/link-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ramadan 2027 / 1448H — MAMTJ6">
+  <meta name="twitter:description" content="Kiraan detik ke 1 Ramadan, jadual Imsak & Berbuka, dan waktu solat harian.">
+  <meta name="twitter:image" content="https://ramadan.mamtj6.com/countdown/media/preview/link-preview.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg1:#0b1e26; --bg2:#0e3a47; --accent:#9be8ff; --card:#122b35; --text:#eaf6fa; --muted:#9db8c2; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:'Merriweather',Georgia,serif; color:var(--text);
+      background:radial-gradient(circle, rgb(9, 46, 57) 0%, rgba(2, 13, 18, 1) 85%);
+      background-attachment:fixed;
+      min-height:100vh; text-align:center; }
+    body::before { content:""; position:fixed; top:0; left:0; width:100%; height:100%;
+      background-image:url('countdown/media/background/pattern.svg'); background-repeat:repeat;
+      opacity:.5; z-index:-1; }
+    .wrap { max-width:860px; margin:0 auto; padding:20px 20px 60px; }
+    /* Header — sama seperti countdown/ */
+    .site-header { text-align:center; margin-bottom:20px; padding-top:20px; }
+    .header-svg { max-width:200px; height:auto; margin-bottom:10px; }
+    .header-subtitle { color:#b0f0ff; font-size:1.1rem; margin:0; letter-spacing:6px; font-family:sans-serif; }
+    .header-title { color:#fff; font-size:clamp(2.5rem,10vw,4rem); font-weight:700; margin:0; line-height:1.1; }
+    .header-year { color:var(--accent); font-size:1.2rem; margin:5px 0 0 0; opacity:.9; font-family:sans-serif; }
+    .hero-count { display:flex; gap:12px; justify-content:center; margin:28px 0 8px; flex-wrap:wrap; }
+    .box { background:rgba(255,255,255,.06); border:1px solid rgba(155,232,255,.2); border-radius:14px;
+      min-width:120px; padding:16px 10px; }
+    .box b { display:block; font-size:38px; }
+    .box span { font-size:12px; color:var(--muted); font-family:sans-serif; letter-spacing:1px; }
+    #hero-note { color:var(--muted); font-size:14px; font-family:sans-serif; min-height:20px; }
+    .disclaimer { font-size:12px; color:var(--muted); font-family:sans-serif; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:32px; }
+    .card { background:var(--card); border:1px solid rgba(155,232,255,.18); border-radius:16px; padding:22px 18px;
+      text-decoration:none; color:var(--text); display:block; }
+    .card:hover { border-color:var(--accent); transform:translateY(-2px); }
+    .card h2 { font-size:19px; margin:0 0 8px; font-family:sans-serif; }
+    .card p { font-size:13px; color:var(--muted); margin:0 0 12px; font-family:sans-serif; line-height:1.6; }
+    .card .go { font-family:sans-serif; font-size:13px; color:var(--accent); font-weight:bold; }
+    footer { margin-top:40px; font-family:sans-serif; font-size:12px; color:var(--muted); }
+    footer a { color:var(--accent); }
+    .footer-logo { width:140px; height:auto; margin-top:26px; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple index page.</p>
+  <div class="wrap">
+    <header class="site-header">
+      <img src="countdown/media/image/ramadan-kareem.svg" alt="Ramadan Kareem" class="header-svg">
+      <p class="header-subtitle">PORTAL</p>
+      <h1 class="header-title">RAMADAN</h1>
+      <p class="header-year" id="hero-year">2027 / 1448H</p>
+    </header>
+
+    <div class="hero-count">
+      <div class="box"><b id="d">–</b><span>HARI</span></div>
+      <div class="box"><b id="h">–</b><span>JAM</span></div>
+      <div class="box"><b id="m">–</b><span>MINIT</span></div>
+      <div class="box"><b id="s">–</b><span>SAAT</span></div>
+    </div>
+    <p id="hero-note">Memuatkan tarikh…</p>
+    <p class="disclaimer">* Tertakluk kepada pengisytiharan oleh Penyimpan Mohor Besar Raja-Raja Malaysia.</p>
+
+    <div class="grid">
+      <a class="card" href="countdown/">
+        <h2>⏳ Countdown Ramadan</h2>
+        <p>Kiraan Hijri &amp; Masihi ke 1 Ramadan dengan imej kongsi.</p>
+        <span class="go">Buka →</span>
+      </a>
+      <a class="card" href="jadual-waktu/">
+        <h2>🕌 Jadual Imsak &amp; Berbuka</h2>
+        <p>Jadual Ramadan 61 zon JAKIM dengan countdown langsung.</p>
+        <span class="go">Buka →</span>
+      </a>
+      <a class="card" href="waktu-solat/">
+        <h2>🕋 Waktu Solat Harian</h2>
+        <p>Waktu solat sepanjang tahun untuk semua zon Malaysia.</p>
+        <span class="go">Buka →</span>
+      </a>
+    </div>
+
+    <img class="footer-logo" src="https://dev.mamtj6.com/media/logo-mamtj6/WEBP/mamtj6-white.webp" alt="Logo MAMTJ6">
+    <footer>
+      <p>&copy; 2026 <a href="https://mamtj6.com">MAMTJ6</a> | <a href="https://wa.me/601156828198">Hubungi Kami</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (async function() {
+      var cfg = { year: 2027, hijriYear: 1448, ramadanStart: '2027-02-08T00:00:00', ramadanEnd: '2027-03-09T00:00:00', labels: { headerYear: '2027 / 1448H' } };
+      try {
+        var r = await fetch('ramadan-config.json', { cache: 'no-store' });
+        if (r.ok) cfg = await r.json();
+      } catch (e) { /* fallback kekal (cth. file://) */ }
+      document.getElementById('hero-year').textContent = (cfg.labels && cfg.labels.headerYear) || (cfg.year + ' / ' + cfg.hijriYear + 'H');
+      document.title = 'Ramadan ' + cfg.year + ' / ' + cfg.hijriYear + 'H — Countdown, Jadual Waktu & Waktu Solat';
+
+      var qs = new URLSearchParams(window.location.search);
+      var testDate = qs.get('testDate'); // cth. ?testDate=2027-02-01 untuk uji
+      function now() { return testDate ? new Date(testDate + 'T00:00:00+08:00').getTime() : Date.now(); }
+      var target = new Date(cfg.ramadanStart).getTime();
+      var end = new Date(cfg.ramadanEnd).getTime();
+
+      function tick() {
+        var t = now(), note = document.getElementById('hero-note');
+        var diff = target - t;
+        if (t >= target && t < end + 864e5) {
+          document.getElementById('d').textContent = '0';
+          document.getElementById('h').textContent = '00';
+          document.getElementById('m').textContent = '00';
+          document.getElementById('s').textContent = '00';
+          note.textContent = '🎉 Selamat Menyambut Ramadan ' + cfg.hijriYear + 'H / ' + cfg.year + 'M';
+          return;
+        }
+        if (diff < 0) diff = 0;
+        var d = Math.floor(diff / 864e5),
+            h = Math.floor(diff / 36e5) % 24,
+            m = Math.floor(diff / 6e4) % 60,
+            s = Math.floor(diff / 1e3) % 60;
+        document.getElementById('d').textContent = d;
+        document.getElementById('h').textContent = String(h).padStart(2, '0');
+        document.getElementById('m').textContent = String(m).padStart(2, '0');
+        document.getElementById('s').textContent = String(s).padStart(2, '0');
+        var dt = new Date(target).toLocaleDateString('ms-MY', { day: 'numeric', month: 'long', year: 'numeric' });
+        note.textContent = 'Menuju 1 Ramadan ' + cfg.hijriYear + 'H — ' + dt + (testDate ? ' (MOD UJIAN)' : '');
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
 </body>
 </html>

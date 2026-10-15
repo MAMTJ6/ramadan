@@ -48,7 +48,7 @@ const CACHE_NAME = 'mamtj6-pwa-test-v1.4.6';
 | Favicons | `favicon/favicon.ico`, `favicon.svg`, `apple-touch-icon.png`, `favicon-96x96.png` |
 | Manifest icons | `favicon/web-app-manifest-192x192.png`, `favicon/web-app-manifest-512x512.png` |
 | Manifest | `favicon/site.webmanifest` |
-| External | Logo from `i.postimg.cc`, Background from `multimedia.mamtj6.com`, SVG favicon from `dev.mamtj6.com` |
+| External | Logo from `i.postimg.cc`, Background from `dev.mamtj6.com`, SVG favicon from `dev.mamtj6.com` |
 
 > **Note**: External assets are cached as opaque responses (status 0). If either external URL is unreachable during first install, `cache.addAll()` will fail and the SW won't install.
 

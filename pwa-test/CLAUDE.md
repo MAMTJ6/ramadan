@@ -39,5 +39,5 @@ npx serve
 ## External Resources
 
 - Logo: `i.postimg.cc` (header image, cached by SW)
-- Background: `multimedia.mamtj6.com/media/img/plain-blue-bg.png` (cached by SW)
+- Background: `dev.mamtj6.com/media/img/plain-blue-bg.png` (cached by SW)
 - Favicon SVG: `dev.mamtj6.com` (cached by SW)

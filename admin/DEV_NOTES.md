@@ -1,5 +1,63 @@
 # DEV_NOTES — Handoff to Next Window
 
+> Latest: Checkpoint 2 — 15 Oct 2026 (asset repoint + root landing, poster KIV)
+
+## Checkpoint 2 — 15 Oct 2026 (asset repoint + root landing, poster KIV)
+
+1. **Headspace** — daytime, checklist-driven session. Owner worked the
+   `MAINTENANCE.md` rollover list top-down ("what next in the list?"), approved
+   each item in one-liners ("ok fix 1 and 2", "ok do"), then pivoted to the
+   `multimedia.mamtj6.com` asset migration and a new root landing page. Same
+   terse register as ever — propose briefly, implement on approval, show
+   receipts. Screenshots arrived as bug reports again (cropped header, black-box
+   logo); read the pixels, they contain the diagnosis. Next-you: keep replies
+   short, verify everything with grep counts, never bulk-edit without approval.
+
+2. **What shipped (all UNCOMMITTED — 19 files, nothing staged/pushed)**
+   - `jadual-waktu/README.md:1,5,9` + `developer.md:271-275`: 2026/1447H →
+     2027/1448H (Start 8 Feb 2027, End 9 Mar, Eid 10 Mar). Changelog history kept.
+   - Asset migration: 26× `multimedia.mamtj6.com` → `dev.mamtj6.com` across
+     16 files (0 hits remain). Logo paths remapped and verified against
+     `D:\Document\GitHub\mamtj6\dev\dev\media`: `media/logo/…` →
+     `media/logo-mamtj6/WEBP|SVG/…`; `plain-blue-bg.png`, `linkpreview.jpg`,
+     mimbar assets identical paths; `calendar/hijri/hari-ini.html` → `…/hari-ini/`.
+   - Root `index.html`: placeholder ("My Simple Index Page") → Hero + live
+     countdown landing (owner chose hero over plain hub/redirect). Reads
+     `ramadan-config.json` live with 2027 fallback, `?testDate=` support, 3 cards
+     (countdown / jadual-waktu / waktu-solat). Header restyled to countdown
+     convention (same `ramadan-kareem.svg`, `.site-header` classes, pattern bg —
+     fixes cropped arabic text); footer logo `mamtj6-black+invert` →
+     `mamtj6-white.webp` native (fixes black-box look).
+   - No deploys, no smoke run this session (no local server started).
+
+3. **Bugs + lessons (sequence continues at #5)**
+   - #5 (FOUND, not fixed — KIV owner-side): template PNG headers read
+     `2026 / 1448H` (year/Hijri mismatch) via image inspection; git timestamps
+     confirm untouched since 30/9/2026. Owner will re-export later.
+   - #6 (FOUND, not fixed — same KIV): `masihi-before-rejab.png` footer reads
+     "Isnin, 7 Februari 2027" — wrong on both axes (7 Feb = Ahad; masihi footer
+     should be Isnin 8 Feb). Correct footers: masihi `Isnin, 8 Feb 2027`,
+     hijri `Ahad, 7 Feb 2027`. Re-export all 8 with header `2027 / 1448H`.
+   - #7 (tooling, worked around): PowerShell bulk-replace script died — the
+     shell wrapper strips `$` (`$_.FullName` → `.FullName`), so `foreach`
+     lost its variables. Lesson: **never use `$` variables in `shell`
+     commands; always use the `edit` tool (with `replaceAll`) for bulk
+     renames**, one pattern per call, batched in parallel.
+   - Standing rules re-confirmed: list-before-edit on migrations (owner reviews
+     first); image reads beat timestamps for "did the asset update?" claims.
+
+4. **Open threads**
+   - OWNER-SIDE: re-export 8 poster PNGs (#5 + #6 above).
+   - NEXT-BUILD: smoke test (`python -m http.server 8000`, `/` +
+     `/?testDate=2027-02-01`), then commit + push (19 files + `skills/`).
+     Reminder: PWA stays off — no `CACHE_NAME` bumps.
+   - NEXT-BUILD: telegram yearly update (`MAINTENANCE.md` §3 — captions,
+     Slides copy) and `media/preview/*` if year shown.
+   - PARKED: 2027 dates provisional pending JAKIM announcement
+     (`TODO 2027-recheck`, API 2027 was 404).
+
+---
+
 > Date: 1 Oct 2026 (~00:00–01:30 MYT, late-night build session)
 > Repo: `multimedia-mamtj6-ramadan` → `ramadan.mamtj6.com` (Ramadan 2027 / 1448H)
 > Last commit pushed: `ebd5d59` — everything pushed EXCEPT one fix (see §1).
